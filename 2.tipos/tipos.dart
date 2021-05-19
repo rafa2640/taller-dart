@@ -41,7 +41,7 @@ void main () {
   var lista1 = ["mazda", "chevrolet", "kia", 8];
   List<String> lista2 = ["mazda", "chevrolet", "kia"];
   var lista4;
-  var lista3 = ["toyota", ...?lista1, ...?lista2, ...?lista4];
+  var lista3 = ["toyota", ...lista1, ...lista2, ...?lista4];
   //var lista3 = [];
 
   //if(lista4 != null){

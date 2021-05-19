@@ -12,8 +12,8 @@ void main(){
 }
 
 var miFuncion = (String valor){
-        return "mi nombre es $valor";
-    }
+    return "mi nombre es $valor";
+};
 
 String obtenerNombre(String? valor, [int? estatura, String? apellido]){
     return 'obtenerNombre : Mi nombre es $valor mi estatura es $estatura';

@@ -40,13 +40,15 @@ class Trabajador implements Empleado {
   @override
   nombreDelAeropuerto(String valor) {
     // TODO: implement nombreDelAeropuerto
-    throw UnimplementedError();
+    //throw UnimplementedError();
+    return 'Nombre del aeropuerto: $valor';
   }
 
   @override
   obtenerNombre() {
     // TODO: implement obtenerNombre
-    throw UnimplementedError();
+    //throw UnimplementedError();
+    return this.nombre;
   }
 }
 
@@ -59,18 +61,17 @@ class Vehiculo {
   int? puertas;
   String? color;
 
-  // Vehiculo();
 }
 
 void main() {
-  Empleado ejemplo = Trabajador("2");
-  print(ejemplo.nombreDelAeropuerto("valor"));
+  Empleado ejemplo = Trabajador("celador");
+  print(ejemplo.nombreDelAeropuerto("Gustavo Artunduaga"));
 
   var persona = Persona(nombre: "nombre", apellido: "apellido", edad: 23);
   //var persona = Persona(nombre:"nombre",apellido:"apellido", edad:23);
   print(persona);
 
-  var empleado = Empleado.fromJson("cajero");
+  var empleado = Empleado.fromJson("Cajero");
 
   print(empleado);
   print(empleado.obtenerNombre());
